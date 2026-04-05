@@ -3,20 +3,7 @@
 import { motion } from 'framer-motion';
 
 const services = [
-  {
-    id: 1,
-    title: 'Paint Protection Film',
-    description: 'Self-healing film that protects your paint from scratches, rock chips, and UV damage.',
-    icon: '🛡️',
-    color: 'from-blue-500 to-blue-600',
-  },
-  {
-    id: 2,
-    title: 'Ceramic Coating',
-    description: 'Professional-grade coating for long-lasting shine and hydrophobic protection.',
-    icon: '✨',
-    color: 'from-purple-500 to-purple-600',
-  },
+
   {
     id: 3,
     title: 'Interior Deep Clean',

@@ -68,21 +68,21 @@ export default function HeroWithCars() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        {/* Badge with car emoji */}
+        {/* Badge with shop name and car emoji */}
         <motion.div
-          className="inline-block mb-6"
-          initial={{ opacity: 0, scale: 0.8 }}
+          className="inline-block mb-8"
+          initial={{ opacity: 1, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <span className="px-4 py-2 bg-gradient-to-r from-orange-500/10 to-yellow-400/10 border border-orange-500/20 rounded-full text-sm font-semibold text-orange-400">
-            🏎️ Hot Wheels Detailing - Premium Car Care
+          <span className="px-6 py-4 bg-gradient-to-r from-orange-500/40 to-yellow-400/40 border-2 border-orange-400/80 rounded-2xl text-2xl sm:text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-yellow-200 break-words drop-shadow-lg">
+            🏎️ Hot Wheels Detailing
           </span>
         </motion.div>
 
         {/* Main Heading with car references */}
         <motion.h1
-          className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
+          className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 leading-tight"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
@@ -93,7 +93,7 @@ export default function HeroWithCars() {
 
         {/* Description with car care focus */}
         <motion.p
-          className="text-lg sm:text-xl text-gray-300 mb-8 max-w-3xl mx-auto"
+          className="text-base sm:text-lg lg:text-xl text-gray-300 mb-8 max-w-3xl mx-auto px-2"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -104,20 +104,20 @@ export default function HeroWithCars() {
 
         {/* CTA with car-themed buttons */}
         <motion.div
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 px-2"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
           <motion.button
-            className="px-8 py-4 bg-gradient-to-r from-orange-500 to-yellow-400 text-black font-bold rounded-lg text-lg hover:shadow-[0_20px_40px_rgba(255,107,53,0.3)] transition-all flex items-center gap-2"
+            className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-orange-500 to-yellow-400 text-black font-bold rounded-lg text-lg hover:shadow-[0_20px_40px_rgba(255,107,53,0.3)] transition-all flex items-center justify-center gap-2"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.98 }}
           >
             <span>🚗</span> Book Your Detailing
           </motion.button>
           <motion.button
-            className="px-8 py-4 border-2 border-orange-500 text-orange-400 font-bold rounded-lg text-lg hover:bg-orange-500/10 transition-all flex items-center gap-2"
+            className="w-full sm:w-auto px-8 py-4 border-2 border-orange-500 text-orange-400 font-bold rounded-lg text-lg hover:bg-orange-500/10 transition-all flex items-center justify-center gap-2"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.98 }}
           >

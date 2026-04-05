@@ -7,37 +7,38 @@ export default function CarImageGallery() {
   const ref = useRef<HTMLDivElement>(null);
 
   const carShowcases = [
+   
     {
       id: 1,
-      title: 'After Ceramic Coating',
-      description: 'Mirror-like finish with 3-year protection',
-      emoji: '✨',
-      color: 'from-blue-600 to-blue-900',
-      image: 'https://images.unsplash.com/photo-1609708536965-59e4a3a21909?w=1920&q=80&auto=format',
-    },
-    {
-      id: 2,
-      title: 'Paint Correction Done',
+      title: 'BMW PAINT CORRECTION',
       description: 'Removed all swirl marks and scratches',
       emoji: '🎨',
       color: 'from-purple-600 to-purple-900',
-      image: 'https://images.unsplash.com/photo-1617654112368-307921291f12?w=1920&q=80&auto=format',
+      image: '/images/BMW.jpeg',
+    },
+    {
+      id: 2,
+      title: 'COMMODORE FULL DETAILING',
+      description: 'Deep cleaned and restored to showroom condition',
+      emoji: '🏆',
+      color: 'from-green-600 to-green-900',
+      image: '/images/COMODOR.jpeg',
     },
     {
       id: 3,
-      title: 'Interior Detailing',
-      description: 'Deep cleaned every surface',
-      emoji: '🧹',
-      color: 'from-green-600 to-green-900',
-      image: 'https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=1920&q=80&auto=format',
-    },
-    {
-      id: 4,
-      title: 'Full Transformation',
-      description: 'Before and after comparison',
-      emoji: '🏆',
+      title: 'INTERIOR DETAILING',
+      description: 'Complete interior restoration and protection',
+      emoji: '✨',
       color: 'from-yellow-600 to-yellow-900',
-      image: 'https://images.unsplash.com/photo-1626337053514-e7ee5b27d450?w=1920&q=80&auto=format',
+      image: '/images/AUDI.jpeg'
+    },
+     {
+      id: 4,
+      title: 'TANK',
+      description: 'Mirror-like finish with premium protection',
+      emoji: '✨',
+      color: 'from-blue-600 to-blue-900',
+      image: '/images/tank.jpeg',
     },
   ];
 
@@ -148,7 +149,7 @@ export default function CarImageGallery() {
         </motion.div>
 
         {/* Instructions Card */}
-        <motion.div
+        {/* <motion.div
           className="mt-12 bg-gradient-to-r from-gray-900/50 to-gray-800/50 border border-gray-700 rounded-xl p-8 backdrop-blur"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -180,7 +181,7 @@ export default function CarImageGallery() {
               </ul>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
